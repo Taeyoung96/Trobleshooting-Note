@@ -35,7 +35,8 @@ Keyword : Pycharm과 Docker를 연동, Pycharm에서 docker 사용
 
 Keyworkd : Markdown에서 글자색 변경  
 문제 발생 : Markdown언어에서 글자색을 검은색이 아닌 다른 색으로 변경하고 싶을 때  
-해결 : html 태그를 써서 해결. `<font color='ff0000'> [이 안에 글 적음]</font>  
+해결 : html 태그를 써서 해결. `<font color='ff0000'> [이 안에 글 적음]</font>`  
+    예시는 빨간색인데, 색을 바꾸고 싶다면 `ff0000`를 [헥스 코드](https://namu.wiki/w/%ED%97%A5%EC%8A%A4%20%EC%BD%94%EB%93%9C)를 활용해서 바꿔야함.    
 
 출처 : [markdown 관련해서 글자색을 변경할 수 있으면 너무 좋겠습니다.](https://github.com/yona-projects/yona/issues/474)  
 
