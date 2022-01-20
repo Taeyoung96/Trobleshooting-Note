@@ -7,6 +7,7 @@
 
 ---  
 
+키워드 : Ubuntu에서 Github blog 빌드  
 문제 발생 : 우분투에서 Github blog를 로컬에서 빌드하고 싶을 때  
 해결 :  
 1. 우선 터미널을 열고 /Taeyoung96.github.io 폴더로 들어간다.  
@@ -19,3 +20,6 @@ Server address: http://127.0.0.1:4000/
 Server running... press ctrl-c to stop.
 ```
 출처 : [우분투에서 github.io(블로그) 생성 및 preview를 위한 jekyll install](https://donghwa-kim.github.io/jekyll.html)  
+
+---
+
