@@ -54,4 +54,18 @@ Server running... press ctrl-c to stop.
              다시 docker container를 실행시키고 들어가고 싶을 때  
 ❗️  해결 : 우선 `docker ps -a` 가 아닌 `docker ps`로 실행을 했을 때, 컨테이너가 실행이 되있어야 한다. (docker start `컨테이너 이름` 을 활용)  
           그 다음 `docker exec <CONTAINER_ID> <COMMAND>`로 컨테이너 안으로 접속한다.  
-📙 출처 : [docker exec 사용법: 실행중인 컨테이너에 명령어 실행하는 방법](https://www.lainyzine.com/ko/article/docker-exec-executing-command-to-running-container/)    
+📙 출처 : [docker exec 사용법: 실행중인 컨테이너에 명령어 실행하는 방법](https://www.lainyzine.com/ko/article/docker-exec-executing-command-to-running-container/)   
+
+---
+⭐️ Keyword : Eigen Matrix 형변환 (typecasting)    
+💥 문제 발생 : Eigen Library를 사용하던 도중 Matrix의 형변환을 하고 싶을 때  
+❗️ 해결 : 아래 코드는 double형 Matrix를 float형으로 바꾸는 방법  
+```
+Eigen::MatrixXd d;                       // Matrix of doubles.
+Eigen::MatrixXf f = d.cast <float> ();   // Matrix of floats.
+```
+📙 출처 : [Cast Eigen::MatrixXd to Eigen::MatrixXf](https://stackoverflow.com/questions/24764031/cast-eigenmatrixxd-to-eigenmatrixxf)  
+
+---
+
+
