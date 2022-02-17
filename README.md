@@ -66,6 +66,19 @@ Eigen::MatrixXf f = d.cast <float> ();   // Matrix of floats.
 ```
 📙 출처 : [Cast Eigen::MatrixXd to Eigen::MatrixXf](https://stackoverflow.com/questions/24764031/cast-eigenmatrixxd-to-eigenmatrixxf)  
 
+---  
+
+⭐️ Keyword : Docker 용량 확인   
+💥 문제 발생 : 갑자기 컴퓨터 용량이 줄어듬.. 문제는 docker container였다.  
+❗️  해결 : `docker system df` 커맨드로 용량 확인, Container 모두 삭제.    
+📙 출처 : [로그가 서버를 죽이러 왔다.](https://uiandwe.tistory.com/1313)  
+         [Docker 용량 확인 및 관리(df, prune)](https://lifeplan-b.tistory.com/146)  
+
 ---
 
+⭐️ Keyword : 우분투 디스크 용량 확인    
+💥 문제 발생 : 메뉴에 있는 'Disk Usage Analyzer'로 확인했을 때, permission denied 때문에 용량 확인을 못하는 것들이 있었음.    
+❗️  해결  :  터미널에 `sudo baobab` 입력  
+📙 출처 : [disk space used up](https://askubuntu.com/questions/305554/disk-space-used-up)  
 
+---
