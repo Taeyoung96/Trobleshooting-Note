@@ -87,11 +87,21 @@ Eigen::MatrixXf f = d.cast <float> ();   // Matrix of floats.
 💥 문제 발생 : No source of timezone data could be found라는 문구와 함께 빌드가 되지 않는 현상 발생   
 ❗️  해결 : `Gemfile`에 `gem 'tzinfo-data'`라는 코드를 추가,  
           `gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]`이라는 코드는 원래 있었는데...  
+          
 📙 출처 : [[Github 깃허브] Windows 환경에서 Github Blog 생성하기](https://iingang.github.io/posts/windows-github-set/)  
           [[GitHub] Jekyll을 이용해 깃허브 블로그 테마 변경하기](https://veggietech.tistory.com/32)  
           [[Rails] 64비트 환경에서 tzinfo 관련 에러를 해결해보자](https://honsal.tistory.com/38)  
           [Resolving TZInfo::DataSourceNotFound Errors](https://github.com/tzinfo/tzinfo/wiki/Resolving-TZInfo::DataSourceNotFound-Errors)  
           [TZInfo::DataSourceNotFound](https://github.com/phusion/passenger-docker/issues/195)  
 
-
 ---
+
+⭐️ Keyword : 윈도우 10 사용자 폴더 변경 후 에러  
+💥 문제 발생 : 사용자 폴더 변경을 한 후, 부팅도 느려지고 원하는 사용자 폴더에 접근이 불가능함.   
+❗️  해결 : 레지스트리 편집기에서 ProfileList 변경   
+
+📙 출처 : [윈도우10 사용자 계정 손상시 복구하기](https://zkim0115.tistory.com/m/282)  
+          [사용자 폴더 이름 바꾸기《1/2》 - Windows 10](https://www.tabmode.com/windows10/win10-user-name-change.html)  
+          
+          
+
