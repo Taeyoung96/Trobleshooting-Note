@@ -103,5 +103,12 @@ Eigen::MatrixXf f = d.cast <float> ();   // Matrix of floats.
 📙 출처 : [윈도우10 사용자 계정 손상시 복구하기](https://zkim0115.tistory.com/m/282)  
           [사용자 폴더 이름 바꾸기《1/2》 - Windows 10](https://www.tabmode.com/windows10/win10-user-name-change.html)  
           
+---
+
+⭐️ Keyword : 우분투 chrome 원격 데스크톱 설정   
+💥 문제 발생 : 팀뷰어는 너무 느려서, chrome 원격 데스크톱으로 설정  
+❗️  해결 : 블로그 따라서 쭉 하면 됌. 나같은 경우는 블로그에 있는 `4. 터미널 켜서 계정을 추가한다.` 이 부분은 Skip함.     
+
+📙 출처 : [리눅스에서 크롬 원격 데스크톱 사용하기](https://velog.io/@hayaseleu/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%81%AC%EB%A1%AC-%EC%9B%90%EA%B2%A9-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)  
           
 
