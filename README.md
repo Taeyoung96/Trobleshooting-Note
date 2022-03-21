@@ -111,4 +111,18 @@ Eigen::MatrixXf f = d.cast <float> ();   // Matrix of floats.
 
 📙 출처 : [리눅스에서 크롬 원격 데스크톱 사용하기](https://velog.io/@hayaseleu/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%81%AC%EB%A1%AC-%EC%9B%90%EA%B2%A9-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)  
           
+---
+
+⭐️ Keyword : Private repository를 git clone할때     
+💥 문제 발생 :  
+```
+Cloning into 'librealsense-Docker'...
+Username for 'https://github.com': Taeyoung96
+Password for 'https://Taeyoung96@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Taeyoung96/librealsense-Docker.git/'
+```
+❗️  해결 : Token을 만들고 Password에 토큰 번호를 복사   
+📙 출처 : [[Github] git clone with personal access token 해결방법](https://chashtag.tistory.com/116)  
 
