@@ -135,4 +135,37 @@ fatal: Authentication failed for 'https://github.com/Taeyoung96/librealsense-Doc
          [[에러 해결] Failed to initialize NVML: Driver/library version mismatch](https://soomiles.github.io/2021/01/13/%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-Failed-to-initialize-NVML-Driver-library-version-mismatch/)  
          
          
+---
 
+⭐️ Keyword : 우분투 18.04 외장디스크 마운트하기    
+💥 문제 발생 : 하아... 무려 1TB 짜리 하드디스크가 인식이 안되서 못쓸뻔했다... 오랜만에 구글링다운 구글링을 해서 문제를 해결했다.  
+            `wrong fs type, bad option, bad superblock on /dev/sdb, missing codepage or helper program, or other error.`  
+❗️  해결 :  
+
+우선 마운트 하려는 디스크의 종류를 먼저 알아야 한다. `sudo fdisk -l`  
+나같은 경우는 FAT16 type 이였다.  
+마운트를 할 폴더를 만든다. ex) /data  
+외장하드 규격을 맞춰주자. (이미 맞춰져 있으면 안해도 됌)  
+`sudo mkfs.vfat /dev/sdb2`  
+마운트 진행  
+`sudo mount -t vfat /dev/sdb2 /data`  
+`df-h`로 마운트가 진행됐는지 확인  
+이제 자동마운트를 해줘야 한다.  
+`sudo blkid`  
+blkid를 통해 UUID 값을 알아낸다.  
+자동 mount를 위해 fstab 설정한다.  
+`sudo gedit /etc/fstab`을 눌러  
+자신에게 맞는 UUID 값을 활용하여  
+`UUID=2481-03B6	/data		vfat	user,owner,utf8,rw,umask=0	0	0`  
+를 추가한다.  
+
+`sudo chmod 777 /data`로 권한까지 부여하면 끝!  
+
+📙 출처 : [하드디스크 마운트 하기](https://curioso365.tistory.com/115)  
+         [우분투 : 하드디스크(HDD) 자동 마운트하기](https://m.blog.naver.com/watney0813/221017927194)  
+         [[ Ubuntu ] 우분투 외장하드 마운트](http://perdupper.blogspot.com/2017/09/ubuntu.html)  
+         [우분투 fdisk, mount](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=asdf2017&logNo=221152581002)  
+         [[마운트 에러 해결] mount: /home/pi/NAS/hdd2: wrong fs type, bad option, bad superblock on /dev/sdb, missing codepage or helper program, or other error.](https://moonfac.tistory.com/53)  
+         [새 디스크 추가시 ext4 format으로 마운트하기](https://blog.soobinpark.com/132)  
+         [Mount&Umount (마운트&언마운트)](https://lascrea.tistory.com/75)  
+         
