@@ -126,3 +126,13 @@ fatal: Authentication failed for 'https://github.com/Taeyoung96/librealsense-Doc
 ❗️  해결 : Token을 만들고 Password에 토큰 번호를 복사   
 📙 출처 : [[Github] git clone with personal access token 해결방법](https://chashtag.tistory.com/116)  
 
+---
+
+⭐️ Keyword : `nvidia-smi`가 안먹는다...    
+💥 문제 발생 : `VNML: Driver/library version mismatch`라는 메시지가 보이면서 갑자기 nvidia-driver가 보이지 않는다.   
+❗️  해결 : 블로그를 보면서 그대로 따라하면 됌, 안되면 드라이버 재설치도 하나의 방법인듯   
+📙 출처 : [NVML: Driver/library version mismatch 해결](https://hwiyong.tistory.com/85)  
+         [[에러 해결] Failed to initialize NVML: Driver/library version mismatch](https://soomiles.github.io/2021/01/13/%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-Failed-to-initialize-NVML-Driver-library-version-mismatch/)  
+         
+         
+
