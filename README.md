@@ -169,3 +169,27 @@ blkid를 통해 UUID 값을 알아낸다.
          [새 디스크 추가시 ext4 format으로 마운트하기](https://blog.soobinpark.com/132)  
          [Mount&Umount (마운트&언마운트)](https://lascrea.tistory.com/75)  
          
+---
+
+⭐️ Keyword : `sudo-apt-get update`를 했을 때 오류가 나는 경우   
+💥 문제 발생 : 아래와 같은 오류 발생  
+```
+E: The repository 'http://ppa.launchpad.net/kirillshkrogalev/ffmpeg-next/ubuntu bionic Release' does not have a Release file
+```
+❗️  해결 : `sudo add-apt-repository --remove ppa:kirillshkrogalev/ffmpeg-next` 한 다음,  
+          `sudo apt-get update`  
+📙 출처 : [E: The repository 'http://ppa.launchpad.net/certbot/certbot/ubuntu focal Release' does not have a Release file](https://stackoverflow.com/questions/60249177/e-the-repository-http-ppa-launchpad-net-certbot-certbot-ubuntu-focal-release)  
+          [What can I do if a repository/PPA does not have a Release file?](https://askubuntu.com/questions/866901/what-can-i-do-if-a-repository-ppa-does-not-have-a-release-file)  
+          
+ ---
+ 
+⭐️ Keyword : `nvidia-smi`가 안나온다...   
+💥 문제 발생  다음과 같은 오류 발생, 아마 강제 종료를 시키면 발생하는 듯.   
+```
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running
+```
+❗️  해결 : 역시 답은 재설치다ㅎㅎ     
+📙 출처 : [couldn't communicate with the NVIDIA Driver 오류 현상](https://eda-ai-lab.tistory.com/572)  
+
+
+ 
