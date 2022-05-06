@@ -191,5 +191,12 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 ❗️  해결 : 역시 답은 재설치다ㅎㅎ     
 📙 출처 : [couldn't communicate with the NVIDIA Driver 오류 현상](https://eda-ai-lab.tistory.com/572)  
 
+---
 
+⭐️ Keyword : evo package installation   
+💥 문제 발생 : pip를 활용해서 설치는 잘 됐는데, 명령어가 안먹힌다.  
+❗️  해결 : pip를 활용해서 설치된 패키지 경로와 터미널에서 보이는 파이썬 경로가 달라서 생기는 문제인듯. PATH를 추가해주면 된다.  
+          `export PATH="$HOME/.local/bin:$PATH"` `.bashrc`파일에 추가  
+📙 출처 : [Cannot find evo pkg](https://github.com/MichaelGrupp/evo/issues/217)  
+         [pip installs packages successfully, but executables not found from command line](https://stackoverflow.com/questions/35898734/pip-installs-packages-successfully-but-executables-not-found-from-command-line/43368894#43368894)  
  
