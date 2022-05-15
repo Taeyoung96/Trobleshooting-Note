@@ -144,11 +144,15 @@ fatal: Authentication failed for 'https://github.com/Taeyoung96/librealsense-Doc
 
 우선 마운트 하려는 디스크의 종류를 먼저 알아야 한다. `sudo fdisk -l`  
 나같은 경우는 FAT16 type 이였다.  
+**이를 반드시 ext4 format으로 바꿔주자!**  
+`fdisk /dev/sdb`에 들어가서 원래 있던 partion을 삭제한 후,  
+다시 ext4 format으로 partion을 만들어 줘야 한다.  
+
 마운트를 할 폴더를 만든다. ex) /data  
 외장하드 규격을 맞춰주자. (이미 맞춰져 있으면 안해도 됌)  
-`sudo mkfs.vfat /dev/sdb2`  
+`sudo mkfs.ext4 /dev/sdb2`  
 마운트 진행  
-`sudo mount -t vfat /dev/sdb2 /data`  
+`sudo mount -t ext4 /dev/sdb2 /data`  
 `df-h`로 마운트가 진행됐는지 확인  
 이제 자동마운트를 해줘야 한다.  
 `sudo blkid`  
@@ -156,8 +160,10 @@ blkid를 통해 UUID 값을 알아낸다.
 자동 mount를 위해 fstab 설정한다.  
 `sudo gedit /etc/fstab`을 눌러  
 자신에게 맞는 UUID 값을 활용하여  
-`UUID=2481-03B6	/data		vfat	user,owner,utf8,rw,umask=0	0	0`  
+`UUID=2481-03B6	/data		ext4	user,owner,utf8,rw,umask=0	0	0`  
 를 추가한다.  
+
+⭐️ 중요 : FAT16 type으로 할 경우 파일이 4G가 넘어가면 복사가 되지 않는다!! 반드시 ext4 format으로 해야한다!
 
 `sudo chmod 777 /data`로 권한까지 부여하면 끝!  
 
