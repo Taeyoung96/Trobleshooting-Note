@@ -206,3 +206,22 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 📙 출처 : [Cannot find evo pkg](https://github.com/MichaelGrupp/evo/issues/217)  
          [pip installs packages successfully, but executables not found from command line](https://stackoverflow.com/questions/35898734/pip-installs-packages-successfully-but-executables-not-found-from-command-line/43368894#43368894)  
  
+---
+
+⭐️ Keyword : NVIDIA driver 재설치 오류     
+💥 문제 발생 : `sudo sh NVIDIA-Linux-x86_64-440.64.run`를 했는데 아래와 같은 오류가 나옴.  
+```
+ ERROR: An NVIDIA kernel module 'nvidia-drm' appears to already be loaded in  
+         your kernel.  This may be because it is in use (for example, by an X  
+         server, a CUDA program, or the NVIDIA Persistence Daemon), but this   
+         may also happen if your kernel was configured without support for     
+         module unloading.  Please be sure to exit any programs that may be    
+         using the GPU(s) before attempting to upgrade your driver.  If no     
+         GPU-based programs are running, you know that your kernel supports    
+         module unloading, and you still receive this message, then an error   
+         may have occurred that has corrupted an NVIDIA kernel module's usage  
+         count, for which the simplest remedy is to reboot your computer.  
+```  
+
+❗️  해결 : GPU process를 모두 제거하고 NVIDIA driver를 다시 설치하면 됌.    
+📙 출처 : [[Solved] An NVIDIA kernel module 'nvidia-drm' appears to already be loaded in your kernel](https://clay-atlas.com/us/blog/2020/03/04/linux-english-note-how-to-disable-nvidia-drm/)  
