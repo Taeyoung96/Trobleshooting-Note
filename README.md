@@ -225,3 +225,15 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 
 ❗️  해결 : GPU process를 모두 제거하고 NVIDIA driver를 다시 설치하면 됌.    
 📙 출처 : [[Solved] An NVIDIA kernel module 'nvidia-drm' appears to already be loaded in your kernel](https://clay-atlas.com/us/blog/2020/03/04/linux-english-note-how-to-disable-nvidia-drm/)  
+
+---
+
+⭐️ Keyword : NVIDIA docker GPG Public Key 교체   
+💥 문제 발생 : NVIDIA docker image를 pull하고 `sudo-apt-get install`을 하는데 오류가 났다.  
+```
+  Error:6 http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64  InRelease                                       
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY A4B469963BF863CC
+```
+❗️  해결 : 친절한 블로그에 다 나와있음.    
+📙 출처 : [[Docker] Tensorflow Container 빌드 시 에러 해결 (W: GPG error)](https://sseongju1.tistory.com/61)  
+         [GPG error: http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64](https://forums.developer.nvidia.com/t/gpg-error-http-developer-download-nvidia-com-compute-cuda-repos-ubuntu1804-x86-64/212904)
