@@ -237,3 +237,13 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 ❗️  해결 : 친절한 블로그에 다 나와있음.    
 📙 출처 : [[Docker] Tensorflow Container 빌드 시 에러 해결 (W: GPG error)](https://sseongju1.tistory.com/61)  
          [GPG error: http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64](https://forums.developer.nvidia.com/t/gpg-error-http-developer-download-nvidia-com-compute-cuda-repos-ubuntu1804-x86-64/212904)
+         
+---
+⭐️ Keyword : ceres-solver 사용, CMakeList.txt 사용법     
+💥 문제 발생 : CMakeList.txt에서 `find_package(Ceres REQUIRED)`를 해줘서 빌드할 때 에러는 안나는데 막상 사용하니,  
+             `undefined reference to ceres::Problem::Problem()`이라는 에러가 났다.  
+❗️  해결 :  CMakeList.txt에서 직접 사용하는 디렉토리에 `target_link_libraries(${CERES_LIBRARIES})`도 같이 추가해줘야한다.  
+📙 출처 : [undefined reference to `ceres::Solve(ceres::Solver::Options const&, ceres::Problem*,](https://blog.katastros.com/a?ID=01600-c13c27bf-93b7-417d-828e-67b1f373721f)  
+
+
+
