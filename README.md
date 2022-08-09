@@ -245,5 +245,10 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 ❗️  해결 :  CMakeList.txt에서 직접 사용하는 디렉토리에 `target_link_libraries(${CERES_LIBRARIES})`도 같이 추가해줘야한다.  
 📙 출처 : [undefined reference to `ceres::Solve(ceres::Solver::Options const&, ceres::Problem*,](https://blog.katastros.com/a?ID=01600-c13c27bf-93b7-417d-828e-67b1f373721f)  
 
+---
 
-
+⭐️ Keyword : Git 첫번째 commit 취소, Add 취소   
+💥 문제 발생 : Git을 사용해서 첫번째로 한 commit을 취소해주려면 일반적인 reset으로 적용되지 않는다.   
+❗️  해결 : `git update-ref -d HEAD`를 하면 stage한 상태로 되돌려 놓는다. 그 다음, `git rm --cached -r -f .`를 하면 unstate 단계로 돌려놓는다.    
+📙 출처 : [GIT : 첫번째 commit 삭제](https://virtualtech.tistory.com/365)  
+         [git add로 추가한 내용을 취소하는 방법](https://www.lainyzine.com/ko/article/how-to-cancle-git-add/)
