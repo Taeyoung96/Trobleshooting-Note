@@ -252,3 +252,12 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 ❗️  해결 : `git update-ref -d HEAD`를 하면 stage한 상태로 되돌려 놓는다. 그 다음, `git rm --cached -r -f .`를 하면 unstate 단계로 돌려놓는다.    
 📙 출처 : [GIT : 첫번째 commit 삭제](https://virtualtech.tistory.com/365)  
          [git add로 추가한 내용을 취소하는 방법](https://www.lainyzine.com/ko/article/how-to-cancle-git-add/)
+
+---
+
+⭐️ Keyword : Ros Bag파일 자르기, ROS bag file split    
+💥 문제 발생 : 기존에 가지고 있던 bag 파일 중에서 일정 시간만 bag 파일을 취득하고 싶을 때  
+❗️  해결 : `rosbag filter [input bagfile] [output bagfile] "t.secs >= 1659249548 and t.secs <= 1659249597"` 여기서 시간은 ROS time이다.  
+📙 출처 : [How to split a recorded rosbag file ?](https://answers.ros.org/question/99711/how-to-split-a-recorded-rosbag-file/)  
+
+---
