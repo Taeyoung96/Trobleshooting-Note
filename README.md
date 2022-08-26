@@ -261,3 +261,8 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 📙 출처 : [How to split a recorded rosbag file ?](https://answers.ros.org/question/99711/how-to-split-a-recorded-rosbag-file/)  
 
 ---
+
+⭐️ Keyword : Ubuntu 먹통, Error:/dev/sda5 contains a file system with errors, check forced   
+💥 문제 발생 : `Error:/dev/sda5 contains a file system with errors, check forced`이라는 글자가 뜨면서 화면이 안뜸..  
+❗️  해결 : `fsck -f /dev/sda5`  
+📙 출처 : 강제로 뭐 해주는 것 같은데... 그냥 [여기](https://commandstech.com/resolved-error-dev-sda5-contains-a-file-system-with-errors-check-forced-linux-error/)보고 따라하면 됨.    
