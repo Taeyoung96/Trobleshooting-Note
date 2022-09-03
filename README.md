@@ -266,3 +266,14 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 💥 문제 발생 : `Error:/dev/sda5 contains a file system with errors, check forced`이라는 글자가 뜨면서 화면이 안뜸..  
 ❗️  해결 : `fsck -f /dev/sda5`  
 📙 출처 : 강제로 뭐 해주는 것 같은데... 그냥 [여기](https://commandstech.com/resolved-error-dev-sda5-contains-a-file-system-with-errors-check-forced-linux-error/)보고 따라하면 됨.    
+
+---
+
+⭐️ Keyword : 대용량 (2TB 이상) 디스크 마운트하기     
+💥 문제 발생 : 기존의 mount 방법을 따라가면 2TB가 최대로 쓸 수 있는 용량이다.    
+❗️  해결 : `parted`라는 명령어를 활용하자. 블로그를 따라가다보면 나옴.    
+📙 출처 : [리눅스에 대용량 HDD 마운트 하기.(4TB이상)](https://blog.dalso.org/uncategorized/813)  
+          [Ubuntu 4 테라 하드 인식](https://ufris.tistory.com/52)  
+          [[CenOS7] 새로운 하드디스크 추가하기.](https://zero-gravity.tistory.com/297)  
+          
+---
