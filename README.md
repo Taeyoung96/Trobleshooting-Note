@@ -277,3 +277,10 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
           [[CenOS7] 새로운 하드디스크 추가하기.](https://zero-gravity.tistory.com/297)  
           
 ---
+
+⭐️ Keyword : IguanaTex install in window  
+💥 문제 발생 : Powerpoint에서 Latex 사용하기!  
+❗️  해결 : 블로그를 따라가다보면 잘 설치된다.    
+📙 출처 : [IguanaTex 설치](https://velog.io/@jyong0719/IguanaTex-%EC%84%A4%EC%B9%98)   
+
+--- 
