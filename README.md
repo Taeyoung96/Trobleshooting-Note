@@ -284,3 +284,18 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 📙 출처 : [IguanaTex 설치](https://velog.io/@jyong0719/IguanaTex-%EC%84%A4%EC%B9%98)   
 
 --- 
+
+⭐️ Keyword : Latex에서 `\argmin`이 인식이 되지 않을 때    
+💥 문제 발생 : `Undefined control sequence. \argmin` 이라는 에러 문구가 떴음.     
+❗️  해결 : 
+```
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+```
+
+위와 같은 command를 tex 파일에 추가하자.  
+
+📙 출처 : [Command for argmin or argmax?](https://tex.stackexchange.com/questions/5223/command-for-argmin-or-argmax)    
+
+---  
