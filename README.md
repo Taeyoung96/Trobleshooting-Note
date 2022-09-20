@@ -10,7 +10,7 @@
 
 ⭐️ Keyword   
 💥 문제 발생  
-❗️  해결  
+❗️ 해결  
 📙 출처  
 
 ---  
@@ -323,6 +323,45 @@ sudo apt-get install -y libgtkglext1
   [[Ubuntu] fcitx 한글 키보드 입력 사용하기](https://m.blog.naver.com/opusk/220986268503)  
   [우분투 20.04 한글 입력 방법 (feat. fcitx)](https://kr-ddubbu.tistory.com/8)  
   
+---
 
+⭐️ Keyword : Docker install in ubuntu 18.04    
+💥 문제 발생 : 오랜만에 해보는 Docker 설치!   
+
+❗️ 해결 : Official 문서를 따라가면 어렵지 않게 설치할 수 있다. 우선 도커를 처음 설치하는 입장에서 작성 (GPU도 사용하지 않음)      
+1. 필요한 패키지 업데이트 및 설치  
+```
+sudo apt-get update
+```
+```
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+```
+
+2. Docker’s official GPG key 추가  
+```
+sudo mkdir -p /etc/apt/keyrings
+```
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+```
+
+3. repository 셋업  
+```
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+4. Docker engine 설치  
+```
+sudo apt-get update
+```
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin  
+```
+
+📙 출처 : [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)   
 
 ---  
