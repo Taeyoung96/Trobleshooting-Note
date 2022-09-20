@@ -365,3 +365,19 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 📙 출처 : [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)   
 
 ---  
+
+⭐️ Keyword : Docker sudo 없이 사용하기  
+💥 문제 발생 : 다음과 같은 에러 문구가 발생  
+```
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/json": dial unix /var/run/docker.sock: connect: permission denied
+```
+❗️ 해결 : 블로그에서 권장하지는 않는다고 했지만, 난 이걸로 해결...  
+```
+sudo chown root:docker /var/run/docker.sock
+```
+```
+sudo chmod 666 /var/run/docker.sock
+```
+📙 출처 : [[Docker] Docker permission denied error 해결](https://dongle94.github.io/docker/docker-permission-error/) 
+
+---  
