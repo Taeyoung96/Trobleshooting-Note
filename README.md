@@ -301,17 +301,28 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 ---  
 
 ⭐️ Keyword : AnyDesk install    
-💥 문제 발생 : 
+💥 문제 발생 : 처음에 있어야할 패키지가 존재하지 않았다.  
 ```
 The following packages have unmet dependencies:
  anydesk : Depends: libgtkglext1 but it is not installable
 E: Unable to correct problems, you have held broken packages.
 ```
-❗️  해결  
+❗️ 해결  
 ```
 sudo apt-get update -y
 sudo apt-get install -y libgtkglext1
 ```
 📙 출처 : [How To Install "libgtkglext1" Package on Ubuntu](https://zoomadmin.com/HowToInstall/UbuntuPackage/libgtkglext1)    
+
+---  
+
+⭐️ Keyword : Ubuntu 18.04 키보드에서 한글 사용하기     
+💥 문제 발생 : 역시 오랜만에 하니 삽질을 좀 했다. `fcitx` 설치가 가장 무난한듯    
+❗️ 해결 : 역시 잘 정리된 블로그가 많다.    
+📙 출처 : [Ubuntu 18.04 에서 한글 키보드, 한영키 설정하기 _ NAMU](https://namuroom.tistory.com/entry/Ubuntu-1804-%EC%97%90%EC%84%9C-%ED%95%9C%EA%B8%80-%ED%82%A4%EB%B3%B4%EB%93%9C-%ED%95%9C%EC%98%81%ED%82%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-NAMU)  
+  [[Ubuntu] fcitx 한글 키보드 입력 사용하기](https://m.blog.naver.com/opusk/220986268503)  
+  [우분투 20.04 한글 입력 방법 (feat. fcitx)](https://kr-ddubbu.tistory.com/8)  
+  
+
 
 ---  
