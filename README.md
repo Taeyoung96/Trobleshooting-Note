@@ -299,3 +299,19 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 📙 출처 : [Command for argmin or argmax?](https://tex.stackexchange.com/questions/5223/command-for-argmin-or-argmax)    
 
 ---  
+
+⭐️ Keyword : AnyDesk install    
+💥 문제 발생 : 
+```
+The following packages have unmet dependencies:
+ anydesk : Depends: libgtkglext1 but it is not installable
+E: Unable to correct problems, you have held broken packages.
+```
+❗️  해결  
+```
+sudo apt-get update -y
+sudo apt-get install -y libgtkglext1
+```
+📙 출처 : [How To Install "libgtkglext1" Package on Ubuntu](https://zoomadmin.com/HowToInstall/UbuntuPackage/libgtkglext1)    
+
+---  
