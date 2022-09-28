@@ -381,3 +381,27 @@ sudo chmod 666 /var/run/docker.sock
 📙 출처 : [[Docker] Docker permission denied error 해결](https://dongle94.github.io/docker/docker-permission-error/) 
 
 ---  
+
+⭐️ Keyword : Matlab install in Ubuntu 18.04   
+💥 문제 발생 : Window에서만 쓰던 Matlab이 ubuntu에서도 되다니!    
+❗️ 해결 : 학교 계정이 있어야 한다. (라이센스 문제로)  
+  우선 차근차근 [블로그](https://my-inote.tistory.com/96)를 따라가면 된다.  
+  다만 나같은 경우는 license 충돌 문제가 일어남.  
+  ```
+  License Manager Error -9
+  Your username does not match the username in the license file. 
+  To run on this computer, you must run the Activation client to reactivate your license.
+  Troubleshoot this issue by visiting: 
+  https://www.mathworks.com/support/lme/R2019b/9
+  Diagnostic Information:
+  Feature: MATLAB 
+  License path: /home/alex/.matlab/R2019b_licenses:/usr/local/MATLAB/R2019b/licenses/license.dat:/usr/local/MATLAB/R
+  2019b/licenses/license_thinkpad-p73_40871338_R2019b.lic 
+  Licensing error: -9,57.
+  ```
+  Matlab을 설치 받을 때 같이 받은 `activate_matlab.sh`를 실행하고 차근차근 license를 등록하고 `whoami`로 나온 계정 이름을 등록시킨다.  
+  
+📙 출처 : [License Manager Error -9 Your username does not match the username in the license file.](https://kr.mathworks.com/matlabcentral/answers/502799-license-manager-error-9-your-username-does-not-match-the-username-in-the-license-file)  
+         [How do I find my user name in order to install or activate my license?](https://kr.mathworks.com/matlabcentral/answers/96800-how-do-i-find-my-user-name-in-order-to-install-or-activate-my-license)  
+
+---  
