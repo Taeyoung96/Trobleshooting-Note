@@ -410,6 +410,8 @@ sudo chmod 666 /var/run/docker.sock
 💥 문제 발생 : maual대로 따라했는데 오류가 나서 참고한 포스팅을 정리하고자 한다.    
 ❗️ 해결 : 내가 올렸던 [Issue](https://github.com/xsens/xsens_mti_ros_node/issues/75),MT manager 사용은 [여기](https://www.jianshu.com/p/bca9cbfb31fb)를 참고  
          Xsens 공식 메뉴얼 사이트는 [여기](https://mtidocs.xsens.com/home)를 참고  
+         **ROS driver를 사용하려면 MT manager를 들어가서 Device output setting에서 `Rate of Turn`을 꼭 켜줘야한다!**  
+         
 📙 출처 : [[IMU #1] Xsens IMU ROS 토픽 받기](https://blog.naver.com/PostView.naver?blogId=iphone7743&logNo=222300448218&parentCategoryNo=&categoryNo=86&viewDate=&isShowPopularPosts=true&from=search)  
   [Linking problem occurs when installing MT Software Suite #75](https://github.com/xsens/xsens_mti_ros_node/issues/75)  
   [Ubuntu 18.04 Xsens MT Manager](https://www.jianshu.com/p/bca9cbfb31fb)  
