@@ -419,4 +419,12 @@ sudo chmod 666 /var/run/docker.sock
 
 ---  
 
+⭐️ Keyword : Zed2i Camera-IMU extrinsic calibration 및 좌표계 절대 위치 구하기    
+💥 문제 발생 : ROS tf를 활용해서 구하는데 헷갈려서 정리한다...  
+❗️ 해결 : 우선 `zed2i.launch`를 하면 rviz 상에서 tf에 대한 정보를 볼 수 있다.  
+  내가 publish하는 topic의 frame 이름을 잘 기억해놨다가, Rviz 상의 Fixed frame을 reference frame으로 두고,  
+  tf상에서 target frame의 이름을 클릭하면 좌표계의 관계를 구할 수 있다.  
+  
+📙 출처 : [Zed docs -ROS - Data display with Rviz](https://www.stereolabs.com/docs/ros/rviz/)  
+         [ROS wiki tf](http://wiki.ros.org/tf)  
 
