@@ -425,6 +425,9 @@ sudo chmod 666 /var/run/docker.sock
   내가 publish하는 topic의 frame 이름을 잘 기억해놨다가, Rviz 상의 Fixed frame을 reference frame으로 두고,  
   tf상에서 target frame의 이름을 클릭하면 좌표계의 관계를 구할 수 있다.  
   
+  `zed2i`의 경우, `zed2i_camera_center` : 실제 카메라 센서의 중심  
+                 `imu_frame` : IMU 좌표계의 위치를 얻을 수 있었다.  
+  
 📙 출처 : [Zed docs -ROS - Data display with Rviz](https://www.stereolabs.com/docs/ros/rviz/)  
          [ROS wiki tf](http://wiki.ros.org/tf)  
 
