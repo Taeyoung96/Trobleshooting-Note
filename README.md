@@ -461,3 +461,16 @@ sudo chmod 777 -R /usr/local/zed
 📙 출처 : [How to install ZED SDK](https://answers.ros.org/question/293850/how-to-install-zed_sdk/)  
 
 ---  
+
+⭐️ Keyword : Velodyne ros driver   
+💥 문제 발생 : `[ERROR] [1554173288.904455221]: DriverNodelet::devicePoll - Failed to poll device.`이라는 무서운 에러가 뜬다.    
+❗️ 해결 : [Github issue](https://github.com/ros-drivers/velodyne/issues/232)에서 봤을 때는, Bug 같기도 하고.. 우선 두 가지를 설정해주고 재부팅해줬다.  
+```
+sudo ufw disable
+```  
+그 다음 튜토리얼을 따라했는데.. `eth0`에서 계속 실패를 했다.
+[Getting Started with the Velodyne VLP16](http://wiki.ros.org/velodyne/Tutorials/Getting%20Started%20with%20the%20Velodyne%20VLP16)  
+📙 출처 : [Getting Started with the Velodyne VLP16](http://wiki.ros.org/velodyne/Tutorials/Getting%20Started%20with%20the%20Velodyne%20VLP16)  
+         [Github issue #232](https://github.com/ros-drivers/velodyne/issues/232)
+
+---  
