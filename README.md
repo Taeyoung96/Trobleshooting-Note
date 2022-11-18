@@ -452,12 +452,12 @@ Call Stack (most recent call first): zed-ros-wrapper-master/CMakeLists.txt:23 (c
 
 -- Configuring incomplete, errors occurred! See also "/home/icrs1/catkin_ws/build/CMakeFiles/CMakeOutput.log". See also "/home/icrs1/catkin_ws/build/CMakeFiles/CMakeError.log". Makefile:318: recipe for target 'cmake_check_build_system' failed make: * [cmake_check_build_system] Error 1 Invoking "make cmake_check_build_system" failed
 ```
-❗️ 해결 : SDK에 궎한 부여!  
+❗️ 해결 : SDK에 권한 부여!  
 ```
 sudo chmod 777 -R /usr/local/zed
 ```  
 그리고 다시 `catkin_make`를 해보자!  
 
-📙 출처 : https://answers.ros.org/question/293850/how-to-install-zed_sdk/  
+📙 출처 : [How to install ZED SDK](https://answers.ros.org/question/293850/how-to-install-zed_sdk/)  
 
 ---  
