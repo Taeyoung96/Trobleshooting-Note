@@ -431,3 +431,33 @@ sudo chmod 666 /var/run/docker.sock
 📙 출처 : [Zed docs -ROS - Data display with Rviz](https://www.stereolabs.com/docs/ros/rviz/)  
          [ROS wiki tf](http://wiki.ros.org/tf)  
 
+---
+
+⭐️ Keyword : SDK 설치를 진행했는데, ros-wrapper에서 인식이 안될때   
+💥 문제 발생 : ZED camera의 SDK를 설치했는데, ros-wrapper를 `catkin_make`하니까 다음과 같은 오류가 뜬다.  
+```
+processing catkin package: 'zed_wrapper' -- ==> add_subdirectory(zed-ros-wrapper-master) CMake Warning at zed-ros-wrapper-master/CMakeLists.txt:22 (find_package): By not providing "FindZED.cmake" in CMAKE_MODULE_PATH this project has asked CMake to find a package configuration file provided by "ZED", but CMake did not find one.
+
+Could not find a package configuration file provided by "ZED" (requested version 2.3) with any of the following names:
+
+ZEDConfig.cmake
+zed-config.cmake
+Add the installation prefix of "ZED" to CMAKE_PREFIX_PATH or set "ZED_DIR" to a directory containing one of the above files. If "ZED" provides a separate development package or SDK, be sure it has been installed.
+
+CMake Error at zed-ros-wrapper-master/CMakeLists.txt:17 (message):
+
+ZED SDK not found, install it from: https://www.stereolabs.com/developers/
+
+Call Stack (most recent call first): zed-ros-wrapper-master/CMakeLists.txt:23 (checkPackage)
+
+-- Configuring incomplete, errors occurred! See also "/home/icrs1/catkin_ws/build/CMakeFiles/CMakeOutput.log". See also "/home/icrs1/catkin_ws/build/CMakeFiles/CMakeError.log". Makefile:318: recipe for target 'cmake_check_build_system' failed make: * [cmake_check_build_system] Error 1 Invoking "make cmake_check_build_system" failed
+```
+❗️ 해결 : SDK에 궎한 부여!  
+```
+sudo chmod 777 -R /usr/local/zed
+```  
+그리고 다시 `catkin_make`를 해보자!  
+
+📙 출처 : https://answers.ros.org/question/293850/how-to-install-zed_sdk/  
+
+---  
