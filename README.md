@@ -481,8 +481,10 @@ sudo ufw disable
 //usr/local/lib/libfmt.a(format.cc.o): relocation R_X86_64_PC32 against symbol `stderr@@GLIBC_2.2.5' can not be used when making a shared object; recompile with -fPIC
 ```
 ❗️ 해결 : `CMakeList.txt`에 맨 첫줄에 `SET(CMAKE_POSITION_INDEPENDENT_CODE TRUE)`를 추가하고 빌드함.    
+
 📙 출처 : https://github.com/fmtlib/fmt/issues/548  
          https://github.com/fmtlib/fmt/issues/2456
+
 ---  
 
 
