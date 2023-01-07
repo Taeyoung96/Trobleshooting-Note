@@ -498,3 +498,14 @@ sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-
 ```
 
 https://github.com/NVlabs/instant-ngp/discussions/300  
+
+
+---
+
+https://freedeveloper.tistory.com/186
+
+https://www.daleseo.com/dockerfile/
+
+
+
+
