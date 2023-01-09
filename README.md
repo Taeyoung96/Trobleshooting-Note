@@ -487,24 +487,41 @@ sudo ufw disable
 
 ---  
 
+⭐️ Keyword : QT plugin 관련  
+💥 문제 발생 : 아래와 같은 오류가 났다.
 ```
 Cannot move to target thread (...)
 qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "/(...)site-packages/cv2/qt/plugins" even though it was found.
 This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
 ```
-
+❗️ 해결  :  
 ```
 sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev
 ```
 
-https://github.com/NVlabs/instant-ngp/discussions/300  
+📙 출처 : https://github.com/NVlabs/instant-ngp/discussions/300    
 
 
 ---
 
-https://freedeveloper.tistory.com/186
+⭐️ Keyword : Dockerfile 명령어 Tip   
+💥 문제 발생 : 항상 헷갈리는 Dockerfile 명령어 정리  
+❗️ 해결 : 아래의 url을 참고하자.    
+📙 출처 :  
+- https://freedeveloper.tistory.com/186  
+- https://www.daleseo.com/dockerfile/  
 
-https://www.daleseo.com/dockerfile/
+---  
+
+
+
+
+
+
+
+
+
+
 
 
 
