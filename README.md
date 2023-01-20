@@ -513,6 +513,19 @@ sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-
 
 ---  
 
+⭐️ Keyword : 크롬 원격 데스크톱 화면 안보임.  
+💥 문제 발생 : 하... 피말리는 1시간이였다. 원격 데스크톱을 설치하니, 화면이 멈추고 원격으로 들어갈 수 없었다.    
+❗️ 해결  
+1. grub recovery mode에 진입 후, 재빠르게 chrome-remote-desktop을 지운다.  
+2. 모니터와 관련된 패키지들을 삭제 후 재설치 한다. (gnome, lightdm, xserver) 
+3. 그리고 재부팅...
+
+📙 출처 : [How to install xserver-xorg on Ubuntu](https://howtoinstall.co/en/xserver-xorg)  
+         [How to remove and reinstall GNOME 3?](https://askubuntu.com/questions/67764/how-to-remove-and-reinstall-gnome-3)  
+         [Installing Lightdm on Ubuntu](https://tecadmin-net.cdn.ampproject.org/v/s/tecadmin.net/installing-lightdm-on-ubuntu/?amp=&amp_gsa=1&amp_js_v=a9&usqp=mq331AQKKAFQArABIIACAw%3D%3D#amp_tf=%EC%B6%9C%EC%B2%98%3A%20%251%24s&aoh=16742071715106&referrer=https%3A%2F%2Fwww.google.com&ampshare=https%3A%2F%2Ftecadmin.net%2Finstalling-lightdm-on-ubuntu%2F)  
+         [GRUB 기초 개념 및 사용방법](https://jstar0525.tistory.com/347)  
+
+---  
 
 
 
