@@ -527,7 +527,33 @@ sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-
 
 ---  
 
+⭐️ Keyword : c++ 변수 공유    
+💥 문제 발생 : `A.cpp`에서 선언한 변수를 `B.h`에서 사용하고 싶을 때...!    
+❗️ 해결  : `extern`이라는 keyword를 활용하자.  
+`A.cpp`에서  
+```cpp
+double var;
+var = 10;
+```
+`B.h`에서  
+```h
+extern double var;
+```
+변수로 활용한 이름이 같아야 한다!  
 
+📙 출처 : ChatGPT에 아래와 같이 질문함.  
+```
+I want to fix my  c++ code.
+In, `A.h` file,
+ground_factor;
+
+In, `B.cpp` file,
+double ground_factor;
+
+I want to use the value of ground_factor of B.cpp file to A.h for global variable, how could I do it?
+```  
+
+---  
 
 
 
