@@ -577,6 +577,12 @@ chmod 777 -R /folder
 
 ---  
 
+⭐️ Keyword : Evo trajectory align failed     
+💥 문제 발생 : 각각의 trajectory는 잘 만들어진 것 같은데, `-a` 옵션을 넣으면, trajectory가 잘려서 나올 때   
+❗️ 해결 : `--verbose`로 몇 개의 pose가 align 되었는지 확인, `--t_max_diff 0.1`로 pose를 모두 담을 수 있도록 조절한다.    
+📙 출처 : [some propblems of tum traj align](https://github.com/MichaelGrupp/evo/issues/505)  
+
+---  
 
 
 
