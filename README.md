@@ -565,7 +565,17 @@ I want to use the value of ground_factor of B.cpp file to A.h for global variabl
 
 ---  
 
+⭐️ Keyword : `Rosbag record` error. `Error writing: Error opening file`    
+💥 문제 발생 : `Rosbag record` 명령어 오류    
+❗️ 해결 : 도커 컨테이너랑 공유를 하고 있어서 그런지, 폴더에 대한 권한을 강제로 넣어줘야한다.  
+```
+cd ..
+chmod 777 -R /folder
+```
+📙 출처 : [ROS bag](https://velog.io/@qaszx1004/ROS-bag)  
+         [Error with rosbag record](https://answers.ros.org/question/38108/error-with-rosbag-record/)  
 
+---  
 
 
 
