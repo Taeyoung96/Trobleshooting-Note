@@ -558,6 +558,9 @@ I want to use the value of ground_factor of B.cpp file to A.h for global variabl
 ⭐️ Keyword : Latex 수학 기호     
 💥 문제 발생 : 수학기호의 symbol을 바꾸고 싶을 때    
 ❗️ 해결 : 아래 링크를 참고하자.    
+
+<p align="center"><img src="https://user-images.githubusercontent.com/41863759/216896734-39766f8c-c380-4144-8b9b-7304677cd77e.png" width = "600" ></p>  
+
 📙 출처 : [What are all the font styles I can use in math mode?](https://tex.stackexchange.com/questions/58098/what-are-all-the-font-styles-i-can-use-in-math-mode) 
 
 ---  
