@@ -584,7 +584,18 @@ chmod 777 -R /folder
 
 ---  
 
+⭐️ Keyword : Docker overlay2 용량 정리    
+💥 문제 발생 : `docker prune` 같은 명령어를 입력해도, 용량이 줄어들지 않을 때    
+❗️ 해결 : 임시적인 방법이긴 하지만, overlay2에서 불필요한 폴더를 강제적으로 제거해주면 용량을 확보할 수 있다.  
+우선 `/var/lib/docker/overlay2/`에 권한 부여,  
+```
+du -sh */diff/ | sort -k 1 -nr
+```  
+아니면, `sudo baobab`으로 용량이 가장 큰 친구들 제거.. 혹시 지금 사용하고 있는 컨테이너 및 이미지에 대한 Log일 수 있으니 주의해야한다.  
+📙 출처 : [[Docker] 도커 볼륨 용량 초과 이슈](https://waytothem.com/blog/102/)  
+         [Is it safe to clean docker/overlay2/](https://stackoverflow.com/questions/46672001/is-it-safe-to-clean-docker-overlay2)  
 
+---  
 
 
 
