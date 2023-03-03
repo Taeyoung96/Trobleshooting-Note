@@ -592,11 +592,25 @@ chmod 777 -R /folder
 du -sh */diff/ | sort -k 1 -nr
 ```  
 아니면, `sudo baobab`으로 용량이 가장 큰 친구들 제거.. 혹시 지금 사용하고 있는 컨테이너 및 이미지에 대한 Log일 수 있으니 주의해야한다.  
+**이 방법의 사용을 권장하지는 않는다... 결국 이미지하고 컨테이너를 다 다시 만듦 ㅠㅠ**  
 📙 출처 : [[Docker] 도커 볼륨 용량 초과 이슈](https://waytothem.com/blog/102/)  
          [Is it safe to clean docker/overlay2/](https://stackoverflow.com/questions/46672001/is-it-safe-to-clean-docker-overlay2)  
 
 ---  
 
+⭐️ Keyword : evo tool tip   
+💥 문제 발생  `evo_res`라는 명령어를 한번 사용해보자.  
+❗️ 해결 : 우선 `evo_ape`의 결과를 저장해야 한다.  
+```
+evo_ape tum GT-trajectory.txt FAST-LIO2-GT-calib.txt -a --save_result result/test2.zip
+```
+그 다음 `evo_ape`라는 명령어 사용  
+```
+evo_res result/*.zip -p
+```
+📙 출처 : https://github.com/MichaelGrupp/evo/issues/9  
+         https://github.com/MichaelGrupp/evo/issues/366  
 
+---  
 
 
