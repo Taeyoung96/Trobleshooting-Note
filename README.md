@@ -623,3 +623,11 @@ snap install zotero-snap
 
 ---  
 
+⭐️ Keyword : Zotero + Notion plugin     
+💥 문제 발생 : Zotero와 Notion을 한번에 활용해보자.   
+❗️ 해결 : 튜토리얼 영상을 따라가다 보면 쉽게 설치할 수 있다.   
+📙 출처 : [A technical guide to setting up Notero (Zotero + Notion plugin)](https://medium.com/@anna-everett/a-technical-guide-to-setting-up-notero-zotero-notion-plugin-d467d675039b)  
+         [Sync Zotero to Notion to Level-Up Your Academic Research | AWESOME Notion Plug-In | Notion Tutorial](https://youtu.be/8IC8-mPbjCo)
+
+---  
+
