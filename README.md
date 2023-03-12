@@ -614,7 +614,7 @@ evo_res result/*.zip -p
 ---  
 
 ⭐️ Keyword : Zotero install in Ubuntu 18.04   
-💥 문제 발생 : 한줄로 zotero 설치! 
+💥 문제 발생 : 한줄로 zotero 설치!  
 ❗️ 해결 : 
 ```
 snap install zotero-snap
