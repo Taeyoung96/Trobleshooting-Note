@@ -631,3 +631,18 @@ snap install zotero-snap
 
 ---  
 
+⭐️ Keyword : Roscore 문제   
+💥 문제 발생 : roscrore를 안켰는데, 켜져있다고 한다!!   
+❗️ 해결 : 강제로 켜져있던 roscore를 꺼주면 해결.    
+- roscore/master 프로세스 확인  
+```
+ps aux | grep ros
+```
+roscore 종료  
+```
+kill -9 <PID>
+```
+📙 출처 : ChatGPT     
+
+---  
+
