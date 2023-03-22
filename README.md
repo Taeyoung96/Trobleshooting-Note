@@ -646,3 +646,11 @@ kill -9 <PID>
 
 ---  
 
+⭐️ Keyword : cmake version change     
+💥 문제 발생 : cmake version을 업그레이드 하려고 한다.    
+❗️ 해결 : 중국 블로그를 차근차근 따라가면 된다.    
+📙 출처 : [编译报错 CMake Error: The following variables are used in this project, but they are set to NOTFOUND.](https://blog.csdn.net/Will_Ye/article/details/123800851)  
+        [cmake download](https://cmake.org/download/)
+
+---  
+
