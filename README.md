@@ -654,3 +654,19 @@ kill -9 <PID>
 
 ---  
 
+⭐️ Keyword : NVIDIA driver install   
+💥 문제 발생 : 아래와 같은 에러 문구를 발견했을 때 해결하는 법   
+```
+You appear to be running an X server; please exit X before installing. 
+```
+❗️ 해결  
+1. 우선 `Ctrl` + `Alt` + `F1` key를 눌러서 GUI 사용을 하지 않는다.  
+2. `sudo /sbin/init 3` 이라고 입력한다.  
+3. `.sh` 파일을 이용해서 nvidia driver를 설치한다.  
+4. `sudo /sbin/init 5`라고 입력한다.  
+
+만약 무한 로그인에 빠졌을 경우, 당황하지 않고 컴퓨터를 재시작한다.  
+
+📙 출처 : [ERROR: You appear to be running an X server; please exit X before installing](https://zerolism.tistory.com/28)    
+
+---  
