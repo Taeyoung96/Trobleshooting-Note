@@ -670,3 +670,16 @@ You appear to be running an X server; please exit X before installing.
 📙 출처 : [ERROR: You appear to be running an X server; please exit X before installing](https://zerolism.tistory.com/28)    
 
 ---  
+
+⭐️ Keyword : docker에서 python 명령어가 먹히지 않을 때     
+💥 문제 발생 : `bash: python: command not found`  
+❗️ 해결 : alias를 등록해주자.  
+```
+echo alias python='python' >> ~/.bashrc
+```
+```
+source ~/.bashrc
+```
+📙 출처 : [-bash: python: command not found](https://zetawiki.com/wiki/-bash:_python:_command_not_found)   
+
+---  
