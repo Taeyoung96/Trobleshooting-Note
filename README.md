@@ -683,3 +683,56 @@ source ~/.bashrc
 📙 출처 : [-bash: python: command not found](https://zetawiki.com/wiki/-bash:_python:_command_not_found)   
 
 ---  
+
+⭐️ Keyword : Velodyne VLP-16 setting    
+💥 문제 발생 : 차근차근 Velodyne setting을 해보자.   
+❗️ 해결  :  
+ROS1을 돌리기 위해서 IP setting을 해놓으면, docker를 활용한 ROS2에서도 손쉽게 해낼 수 있다.  
+
+우선 IP를 맞추는 것이 상당히 중요하다.  
+메뉴에 있는 `network`에 가서 새로운 IP address를 부여하자.  
+![Screenshot from 2023-07-26 16-36-18](https://github.com/Taeyoung96/Trobleshooting-Note/assets/41863759/0016f32b-e57f-4a3d-9c6f-77073ed55cb9)  
+
+나는 위와 같이 부여했다.  
+`192.168.1.201`만 아니면 괜찮은 것 같음.  
+그리고 Velodyne을 연결하고 `ifconfig`로 나오는 이름으로 IP 주소를 할당한다.  
+**예시에서는 `eth0`이라고 나와있지만 본인의 가지고 있는 이름이 각각 다를 수 있기 때문에 한번 확인하고 자신만의 이름으로 진행하자!**  
+```
+sudo ifconfig eth0 192.168.3.100
+```
+```
+sudo route add 192.168.XX.YY eth0
+```
+
+여기서 살짝 헤맸는데, `XX.YY`는 velodyne 아래에 MAC주소 뒤에 4자리를 의미한다.  
+**하지만 적혀있는 주소는 HEX이고 우리는 이를 십진수로 변환해서 적어야 한다.**  
+예를 들어, `XX.YY`가 `36.50`이라고 적혀있으면 우리가 `add`를 해줘야 하는 주소는 아래와 같다.  
+```
+sudo route add 192.168.54.80 eth0
+```
+그 다음 `192.168.1.201`에 들어가서 port 번호를 확인하자.  
+추후 port 번호를 launch 파일에서 이용한다.  
+
+그 다음 ROS 1 기준으로  
+```
+sudo apt-get install ros-VERSION-velodyne
+```
+```
+cd ~/catkin_ws/src/ && git clone https://github.com/ros-drivers/velodyne.git
+```
+```
+cd ~/catkin_ws/ && catkin_make
+```
+
+그 후, launch를 진행하자!  
+```
+roslaunch velodyne_pointcloud VLP16_points.launch
+```
+
+velodyne points의 경우 frame ID가 `velodyne`이므로 Rviz에서 볼 때 fixed frame을 바꿔야 한다.  
+
+
+📙 출처 : [Getting Started with the Velodyne VLP16](http://wiki.ros.org/velodyne/Tutorials/Getting%20Started%20with%20the%20Velodyne%20VLP16)  
+         [Velodyne Lidar VLP-16 Setup](https://blog.naver.com/jackyoung96/221896551468)  
+
+---  
