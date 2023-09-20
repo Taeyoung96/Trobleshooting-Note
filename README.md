@@ -736,3 +736,17 @@ velodyne points의 경우 frame ID가 `velodyne`이므로 Rviz에서 볼 때 fix
          [Velodyne Lidar VLP-16 Setup](https://blog.naver.com/jackyoung96/221896551468)  
 
 ---  
+
+⭐️ Keyword : docker에서 python 명령어가 작동하지 않을 때     
+💥 문제 발생 : `Bash python command not found` 라는 출력이 docker container 내부에서 나옴.   
+❗️ 해결 : 
+```
+# bashrc (python3나 원하는 python 버전)
+alias python=python3
+
+# 터미널
+source ~/.bashrc
+```
+📙 출처  : [[ubuntu] python을 찾을 수 없다고 할때](https://yay-z.com/94)   
+
+---  
