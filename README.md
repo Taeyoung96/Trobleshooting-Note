@@ -750,3 +750,29 @@ source ~/.bashrc
 📙 출처  : [[ubuntu] python을 찾을 수 없다고 할때](https://yay-z.com/94)   
 
 ---  
+
+⭐️ Keyword : Docker에서 evo 설치  
+💥 문제 발생 : Container 안에서 python, pip이 설치가 되어 있지 않다고 할 때, 따라하면 된다.    
+❗️ 해결 
+1. `Bash python command not found` 해결
+```
+alias python=python3
+source ~/.bashrc
+```
+  
+2. `Bash pip command not found` 해결
+```
+sudo apt-get install python3-pip
+```
+
+3. evo 설치 및 numpy version 오류 해결
+```
+pip install evo
+pip install numpy==1.21
+```
+
+
+📙 출처 : [bash: pip: command not found](https://stackoverflow.com/questions/9780717/bash-pip-command-not-found)  
+         [AttributeError: module 'numpy' has no attribute 'typeDict'](https://stackoverflow.com/questions/74852225/attributeerror-module-numpy-has-no-attribute-typedict)
+
+---  
