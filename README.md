@@ -776,3 +776,29 @@ pip install numpy==1.21
          [AttributeError: module 'numpy' has no attribute 'typeDict'](https://stackoverflow.com/questions/74852225/attributeerror-module-numpy-has-no-attribute-typedict)
 
 ---  
+
+⭐️ Keyword   
+💥 문제 발생  `sudo apt-get update`
+```
+W: Failed to fetch http://kr.ftp.daumkakao.com/ubuntu/dists/focal/InRelease  Could not resolve 'kr.ftp.daumkakao.com'
+W: Failed to fetch http://kr.ftp.daumkakao.com/ubuntu/dists/focal-updates/InRelease  Could not resolve 'kr.ftp.daumkakao.com'
+W: Failed to fetch http://kr.ftp.daumkakao.com/ubuntu/dists/focal-backports/InRelease  Could not resolve 'kr.ftp.daumkakao.com'
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+```
+
+❗️ 해결  
+```
+sudo gedit /etc/apt/sources.list
+```
+Replace
+```
+http://kr.ftp.daumkakao.com
+```
+to
+```
+http://mirror.kakao.com
+```
+
+📙 출처 : ChatGPT 
+
+---  
