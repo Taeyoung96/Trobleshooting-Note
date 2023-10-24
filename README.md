@@ -777,15 +777,14 @@ pip install numpy==1.21
 
 ---  
 
-⭐️ Keyword   
-💥 문제 발생  `sudo apt-get update`
+⭐️ Keyword : apt-get update가 제대로 되지 않을 때     
+💥 문제 발생  `sudo apt-get update`를 수행하면 아래와 같은 Warning 메시지가 뜬다.  
 ```
 W: Failed to fetch http://kr.ftp.daumkakao.com/ubuntu/dists/focal/InRelease  Could not resolve 'kr.ftp.daumkakao.com'
 W: Failed to fetch http://kr.ftp.daumkakao.com/ubuntu/dists/focal-updates/InRelease  Could not resolve 'kr.ftp.daumkakao.com'
 W: Failed to fetch http://kr.ftp.daumkakao.com/ubuntu/dists/focal-backports/InRelease  Could not resolve 'kr.ftp.daumkakao.com'
 W: Some index files failed to download. They have been ignored, or old ones used instead.
 ```
-
 ❗️ 해결  
 ```
 sudo gedit /etc/apt/sources.list
@@ -799,6 +798,13 @@ to
 http://mirror.kakao.com
 ```
 
-📙 출처 : ChatGPT 
+📙 출처: (친절한) ChatGPT 
+
+---  
+
+⭐️ Keyword : Wifi와 LAN port 우선 순위 정하기   
+💥 문제 발생 : Wifi로 인터넷을 잡아서 사용하고 있고, Velodyne을 사용하기 위해서 LAN을 추가했는데 갑자기 인터넷이 되지 않았다!  
+❗️ 해결 : route에서 우선순위를 할당할 수 있어, wifi를 더 우선순위가 높도록 설정하면 된다. 차근차근 블로그를 따라가다보면 쉽게 할 수 있다.      
+📙 출처 : [[Linux] 라우팅 테이블 설정(route, Metric 우선순위)](https://changun516.tistory.com/141)  
 
 ---  
