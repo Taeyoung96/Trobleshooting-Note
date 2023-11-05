@@ -808,3 +808,40 @@ http://mirror.kakao.com
 📙 출처 : [[Linux] 라우팅 테이블 설정(route, Metric 우선순위)](https://changun516.tistory.com/141)  
 
 ---  
+
+⭐️ Keyword : Ubuntu CPU 사용량, 메모리 사용량 확인   
+💥 문제 발생 : 터미널을 활용해서 알고리즘의 Max CPU 사용량과 Max 메모리 사용량을 알고 싶을 때  
+❗️ 해결 : `sysstat` 패키지를 활용하자.  
+- `sysstat` 패키지 설치:
+```
+sudo apt-get update && sudo apt-get install sysstat
+```
+다음 단계를 따라 `sysstat`의 데이터 수집을 활성화하고 `sar` 명령어를 사용할 수 있도록 설정해보겠습니다:
+
+- sysstat 설정 파일 열기:
+   ```bash
+   sudo nano /etc/default/sysstat
+   ```
+
+- 데이터 수집 활성화:
+   파일 내에서 `ENABLED` 값을 `true`로 변경합니다.
+   ```
+   ENABLED="true"
+   ```
+
+-  설정 파일 저장 및 종료:
+   `nano` 에디터에서 `Ctrl + X`를 누르고, `Y`를 눌러 변경 사항을 저장한 후 `Enter`를 눌러 종료합니다.
+
+-  sysstat 서비스 재시작:
+   ```bash
+   sudo service sysstat restart
+   ```
+
+-  데이터 수집 대기:
+   `sysstat`이 데이터를 수집하기 시작하면, 일정 시간이 지난 후에 `sar` 명령어를 사용하여 데이터를 조회할 수 있습니다. 데이터 수집 간격은 기본적으로 10분입니다. 따라서 최소 10분 후에 다시 `sar -u 300` 명령어를 실행해보세요.
+
+이렇게 설정하면 `sar` 명령어를 사용하여 시스템 활동을 조회할 수 있게 됩니다.
+
+📙 출처 : ChatGPT  
+
+---  
