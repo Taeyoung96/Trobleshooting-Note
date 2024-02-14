@@ -845,3 +845,17 @@ sudo apt-get update && sudo apt-get install sysstat
 📙 출처 : ChatGPT  
 
 ---  
+
+⭐️ Keyword : Ubuntu 22.04에서 docker install   
+💥 문제 발생 : 기본적으로 제공하던 `apt-get`에 연결된 docker 패키지가 없어서 다른 방법으로 설치를 해줘야 한다.    
+❗️ 해결 : 
+```
+curl -fsSL https://get.docker.com -o get-docker.sh
+```
+
+```
+ sudo sh get-docker.sh
+```
+📙 출처 : [Docker(도커) Ubuntu 22.04 LTS(우분투 22.04) 설치](https://bundw.tistory.com/98)  
+
+---  
