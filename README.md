@@ -859,3 +859,19 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 📙 출처 : [Docker(도커) Ubuntu 22.04 LTS(우분투 22.04) 설치](https://bundw.tistory.com/98)  
 
 ---  
+
+⭐️ Keyword : 대용량 파일 옮기기   
+💥 문제 발생 : 우분투에서 터미널로 대용량 파일 옮길때 쓰는 명령어    
+❗️ 해결 : 
+```
+rsync -anv --progress [sorce] [target]
+```
+
+```
+tar cvf - [source] | (cd [target] ; tar xvf -)
+```
+📙 출처  : [리눅스 우분투 대용량 파일 옮기기 꿀팁](https://cho001.tistory.com/236)  
+          [Linux Large File Copy(Linux 대량 파일 복사)](https://jellybeanz.medium.com/tip-linux-large-file-copy-linux-%EB%8C%80%EB%9F%89-%ED%8C%8C%EC%9D%BC-%EB%B3%B5%EC%82%AC-2d7c18f48d77)
+
+---  
+
