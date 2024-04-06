@@ -380,6 +380,19 @@ sudo chmod 666 /var/run/docker.sock
 ```
 📙 출처 : [[Docker] Docker permission denied error 해결](https://dongle94.github.io/docker/docker-permission-error/) 
 
+❗️ 또 다른 해결 : 
+```
+sudo /usr/sbin/groupadd -f docker
+sudo usermod -aG docker $USER
+sudo /usr/sbin/usermod -aG docker `user`
+sudo chown root:docker /var/run/docker.sock
+sudo newgrp docker
+```
+
+그리고 재부팅!
+
+📙 출처 : https://github.com/occidere/TIL/issues/116
+
 ---  
 
 ⭐️ Keyword : Matlab install in Ubuntu 18.04   
